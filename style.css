@@ -35,11 +35,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		}
 
 		.name {
-			font-size: 1.3em;
+			font-size: 1.5em;
 			font-weight: bold;
 			padding: 0;
 			margin:0;
 			display: block;
+		}
+
+		.tag-weapon .name:before {
+			content: '\2694   ';
+			font-size:150%;
+		}
+		.tag-trap .name:before {
+			content: '!!! ';
 		}
 
 		.tag-location .name {
