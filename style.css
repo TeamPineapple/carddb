@@ -1,0 +1,101 @@
+/*
+Theme Name: Card DB
+Theme URI: https://wordpress.org/themes/twentyfifteen
+Author: David Nuon feat. the WordPress team
+Author URI: https://wordpress.org/
+Description: Quick and dirty theme for card printing, based on 2015 theme.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+		body {
+			font-family: 'Helvetica Neue', sans-serif;
+			font-size: 12px;
+		}
+
+		.sheet {
+			width: 909px;
+			margin: 0 auto;
+		}
+
+		.card {
+			border-radius: 5px;
+			margin: 0;
+			width: 240px;
+			height: 370px;
+			padding: 10px;
+			margin: 5px;
+			float: left;
+			box-shadow: rgba(0,0,0,.3) 0px 1px 4px;
+		}
+
+		.name {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding: 0;
+			margin:0;
+			display: block;
+		}
+
+		.tag-location .name {
+			text-align: center;
+			font-size: 1.7em;
+			font-style: italic;
+
+		}
+
+		.tag-consumable .name:before {
+			content: '\25C9    ';
+		}
+
+		.tag-combatant .name:before {
+			content: '\2620    ';
+			font-size: 150%;
+		}
+
+
+		.tag-item .name:before {
+			content: '\25C8   ';
+		}
+
+		.combatant {
+			margin: .1in 0;
+			padding: 0;
+		}
+
+		.attributes {
+			padding: .05in 0;
+			margin: .05in 0;
+			border: 1pt solid #aaa;
+			font-style: italic;
+			border-width: 1pt 0; 
+		}
+		.attributes ul {
+			padding: 0;
+			margin:0;
+		}
+
+		.attributes ul li, 
+		.combatant li {
+			list-style: none;
+			padding: 0;
+			margin:0;
+			display: inline;
+		}
+
+		.attributes ul li:after {
+			content: ',';
+		}
+
+		.combatant li:after {
+			content: ' / ';
+		}
+		.combatant li:last-child:after,
+		.attributes ul li:last-child:after {
+			content: '';
+		}
