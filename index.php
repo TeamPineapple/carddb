@@ -24,7 +24,8 @@ query_posts(
 			$counter = 0;
 			// Start the loop.
 			while ( have_posts() ) : the_post();
-				$copies = max(1, (int)(get_post_custom()['copies'][0]) );
+				$custom = get_post_custom();
+				$copies = max(1, (int)($custom['copies'][0]) );
 				$copies = isset($_GET['print']) ? $copies : 1;
 				while($copies--) {
 					get_template_part( 'content', get_post_format() );
