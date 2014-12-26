@@ -9,6 +9,11 @@
 			height: 10in ;
 			width: 7.57in;
 			margin:0;
+			page-break-after: always;
+		}
+
+		.sheet:last-child {
+			page-break-after: avoid;
 		}
 
 		.card {

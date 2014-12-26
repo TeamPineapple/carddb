@@ -48,6 +48,14 @@ if ($posttags) {
 		<?php if (isset($combat['ATK'])): ?>
 			<?php echo sprintf('<li><strong>ATK</strong>: %s</li>', $combat['ATK'][0]); ?>
 		<?php endif; ?>
+
+		<?php if (isset($combat['AP'])): ?>
+			<?php echo sprintf('<li><strong>AP</strong>: %s</li>', $combat['AP'][0]); ?>
+		<?php endif; ?>
+
+		<?php if (isset($combat['Lv'])): ?>
+			<?php echo sprintf('<li><strong>Lv</strong>: %s</li>', $combat['Lv'][0]); ?>
+		<?php endif; ?>
 	</ul>
 
 

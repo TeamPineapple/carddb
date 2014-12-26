@@ -33,7 +33,7 @@ query_posts(
 
 					if($counter % 9 == 0) {
 						
-						echo '</div><br><br><br><br><div class="sheet">';
+						echo '</div><div class="sheet">';
 					} 
 				}
 
